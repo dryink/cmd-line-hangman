@@ -1,5 +1,6 @@
 from sets import Set
 
+
 def get_none():
     return None
 
@@ -9,8 +10,20 @@ def get_string():
 
 
 def get_multi_line_string_1():
-    return """This is a very long string...
-        ...with multiple lines."""
+    return """This is a very long string
+        with multiple lines.""".replace('\n', ' ')
+
+
+def get_multi_line_string_2():
+    return 'This is a very long string ' \
+           'with multiple lines.'
+
+
+def get_multi_line_string_3():
+    return ('This is a very long string '
+            'with multiple lines '
+            'and parens with no commas '
+            'otherwise it would be a tuple')
 
 
 def get_integer_1():
@@ -60,6 +73,7 @@ def get_tuple_1():
 
 def get_set():
     return Set(['Keith', 'Lance', 'Allura', 'Hunk', 'Pidge'])
+
 
 def get_empty_dict():
     my_dict = {}
