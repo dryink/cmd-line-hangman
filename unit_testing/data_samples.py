@@ -1,6 +1,3 @@
-from sets import Set
-
-
 def get_none():
     return None
 
@@ -69,10 +66,6 @@ def get_mixed_list_1():
 def get_tuple_1():
     my_tuple = ('ball', 42, 'green', 55.5)
     return my_tuple
-
-
-def get_set():
-    return Set(['Keith', 'Lance', 'Allura', 'Hunk', 'Pidge'])
 
 
 def get_empty_dict():

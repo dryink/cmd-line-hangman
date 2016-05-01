@@ -48,7 +48,7 @@ class DataTests(unittest.TestCase):
 
     def test_raises_2(self):
         with self.assertRaises(Exception) as context:
-            data_samples.get_execption()
+            data_samples.get_exception()
 
         self.assertIn('Whoops', context.exception)
 
